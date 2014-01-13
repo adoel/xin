@@ -1,0 +1,87 @@
+/* line 1, ../scss/include/_global.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 1, ../scss/include/_app.scss */
+.xin-app {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border: 1px solid green;
+  background-color: #fcc;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* line 42, ../scss/include/_app.scss */
+body {
+  display: none;
+}
+
+/* line 1, ../scss/include/ui/_outlet.scss */
+.xin-view {
+  display: none;
+}
+
+/* line 1, ../scss/include/ui/_pager.scss */
+.xin-pager {
+  display: block;
+  min-height: 1px;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -moz-box-align: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  flex-align: stretch;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 18, ../scss/include/ui/_pager.scss */
+.xin-pager .xin-view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 4, ../scss/include/_ui.scss */
+.xin-show {
+  display: inherit;
+}

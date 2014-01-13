@@ -3,4 +3,5 @@
 /vendor
 /project.sublime-*
 /.sass-cache
-/css
+#/css
+
