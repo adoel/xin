@@ -4,6 +4,12 @@
     var demo = window.demo = {};
     demo.simple = {};
 
+    // render task list
+    var taskListTemplate = _.template($('#taskListTemplate').html());
+    var renderTaskList = function(targetId,template,data){
+        $('#' + targetId).html(template);
+    }
+
     var LoginView = xin.ui.Outlet.extend({
 
         clicked: function(evt) {
@@ -33,9 +39,10 @@
             alert('window context');
         };
 
-        // app.set('clicked', function() {
-        //     alert('ini yang dijalankan');
-        // });
+        app.set('clicked', function() {
+            alert('ini yang dijalankan');
+        });
+
         app.start();
     });
 })();
